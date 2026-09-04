@@ -1,11 +1,11 @@
 [
   {
     "id": "p1",
-    "title": "Reel za Instagram – Brzi rezovi",
+    "title": "Instagram Reel – Fast Cuts",
     "category": "short-form",
     "embedUrl": "https://www.youtube.com/embed/M7lc1UVf-VE",
     "aspectRatio": "9:16",
-    "description": "Dinamičan vertikalni edit sa brzim rezovima i tekstualnim naglascima, optimizovan za zadržavanje pažnje u prvih 3 sekunde.",
+    "description": "A punchy vertical edit built around fast cuts and bold on-screen text, designed to hook viewers in the first 3 seconds.",
     "tags": ["Fast Cuts", "Captions", "Sound Design"]
   },
   {
@@ -14,7 +14,7 @@
     "category": "short-form",
     "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
     "aspectRatio": "9:16",
-    "description": "Kratki highlight edit iz trenerovih treninga, sa dinamičnim prelazima i motivacionom muzikom.",
+    "description": "A short highlight reel from a trainer's sessions, with snappy transitions and motivational music driving the pace.",
     "tags": ["Pacing", "Color Grading", "Sound Design"]
   },
   {
@@ -23,7 +23,7 @@
     "category": "gaming",
     "embedUrl": "https://www.youtube.com/embed/TLkA0RELQ1g",
     "aspectRatio": "16:9",
-    "description": "Montaža najboljih klučnih poteza sa sinhronizovanim zvučnim efektima i tranzicijama u ritmu muzike.",
+    "description": "A montage of the best clutch plays, synced sound effects and transitions cut to the rhythm of the soundtrack.",
     "tags": ["Fast Cuts", "VFX", "Sound Design"]
   },
   {
@@ -32,43 +32,43 @@
     "category": "gaming",
     "embedUrl": "https://www.youtube.com/embed/Y-rmzh0PI3c",
     "aspectRatio": "16:9",
-    "description": "Highlight edit epske borbe sa bosom, uz dodatu grafiku za brojanje pokušaja i naglašavanje ključnih trenutaka.",
+    "description": "A highlight edit of an epic boss fight, with added on-screen graphics tracking attempts and key moments.",
     "tags": ["Motion Graphics", "Color Grading"]
   },
   {
     "id": "p5",
-    "title": "Product Launch – Reklama za obuću",
+    "title": "Product Launch – Sneaker Commercial",
     "category": "commercial",
     "embedUrl": "https://player.vimeo.com/video/76979871",
     "aspectRatio": "16:9",
-    "description": "Komercijalni spot za lansiranje novog modela patika, sa naglaskom na dinamičan kolor grejding i brend identitet.",
+    "description": "A commercial spot for a new sneaker launch, built around bold color grading and strong brand identity.",
     "tags": ["Color Grading", "Brand Identity", "Sound Design"]
   },
   {
     "id": "p6",
-    "title": "Restoran Promo Video",
+    "title": "Restaurant Promo Video",
     "category": "commercial",
     "embedUrl": "https://www.youtube.com/embed/M7lc1UVf-VE",
     "aspectRatio": "16:9",
-    "description": "Promotivni video za lokalni restoran, sa fokusom na atmosferu i pripremu hrane kroz meke prelaze.",
+    "description": "A promotional video for a local restaurant, focused on atmosphere and food prep through smooth transitions.",
     "tags": ["Motion Graphics", "Color Grading"]
   },
   {
     "id": "p7",
-    "title": "Dokumentarni Kratkometražni Film",
+    "title": "Short Documentary Film",
     "category": "long-form",
     "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
     "aspectRatio": "16:9",
-    "description": "Dugometražni narativni edit koji prati priču kroz intervjue, arhivske snimke i originalnu muziku.",
+    "description": "A long-form narrative edit weaving together interviews, archival footage and an original score.",
     "tags": ["Storytelling", "Sound Design", "Color Grading"]
   },
   {
     "id": "p8",
-    "title": "Podcast Epizoda – Highlight Edit",
+    "title": "Podcast Episode – Highlight Edit",
     "category": "long-form",
     "embedUrl": "https://www.youtube.com/embed/TLkA0RELQ1g",
     "aspectRatio": "16:9",
-    "description": "Multicam edit pune epizode podkasta sa automatskim prebacivanjem kamera i čišćenjem zvuka.",
+    "description": "A full multicam podcast episode edit with automatic camera switching and cleaned-up audio.",
     "tags": ["Multicam Editing", "Sound Design"]
   }
 ]

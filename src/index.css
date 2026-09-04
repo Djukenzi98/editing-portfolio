@@ -4,15 +4,16 @@
   --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
 
-  --color-accent: #ff3d3d;
-  --color-accent-dim: #7a1414;
+  --color-accent: #facc15;
+  --color-accent-2: #eab308;
+  --color-accent-soft: #facc1526;
 
-  --color-bg: #0a0a0b;
-  --color-surface: #131315;
-  --color-surface-2: #1b1b1e;
-  --color-border: #262629;
+  --color-bg: #08080a;
+  --color-surface: #131316;
+  --color-surface-2: #1c1c20;
+  --color-border: #26262b;
 
-  --animate-marquee: marquee 22s linear infinite;
+  --animate-marquee: marquee 26s linear infinite;
 }
 
 @keyframes marquee {
@@ -36,6 +37,19 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+/* subtle film-grain texture over the whole page for a cinematic feel */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 ::selection {
@@ -49,4 +63,24 @@ body {
 
 .font-display {
   font-family: var(--font-display);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, #ffffff 20%, var(--color-accent) 65%, var(--color-accent-2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(100deg, var(--color-accent), var(--color-accent-2));
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

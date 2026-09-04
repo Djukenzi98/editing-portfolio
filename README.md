@@ -1,32 +1,36 @@
 # Portfolio – Video Editor & Motion Designer
 
-React (Vite) + TypeScript + Tailwind CSS v4 + Framer Motion. Bez backenda i baze — svi radovi se čuvaju u `src/data/projects.json`.
+React (Vite) + TypeScript + Tailwind CSS v4 + Framer Motion. No backend and no database — all work items live in `src/data/projects.json`.
 
-## Pokretanje
+## Running locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Otvori `http://localhost:5173`.
+Open `http://localhost:5173`.
 
-## Izmena sadržaja
+## Editing content
 
-- **Ime, opis, kontakt, socijalne mreže** → `src/components/Header.tsx` i `src/components/Footer.tsx`.
-- **Radovi (portfolio stavke)** → `src/data/projects.json`. Svaki objekat ima:
-  - `id` – jedinstveni string
-  - `title` – naslov rada
-  - `category` – jedna od: `"short-form"`, `"gaming"`, `"commercial"`, `"long-form"`
-  - `embedUrl` – embed link (YouTube `https://www.youtube.com/embed/<ID>`, Vimeo `https://player.vimeo.com/video/<ID>`, ili Frame.io embed link)
-  - `aspectRatio` – `"16:9"` ili `"9:16"` (za `short-form` radove uvek `"9:16"`)
-  - `description` – kratak opis (1-2 rečenice)
-  - `tags` – niz stringova (npr. `["Color Grading", "Sound Design"]`)
+- **Name, bio, contact, socials** → `src/components/Header.tsx` and `src/components/Footer.tsx`.
+- **Work items** → `src/data/projects.json`. Each object has:
+  - `id` – unique string
+  - `title` – project title
+  - `category` – one of: `"short-form"`, `"gaming"`, `"commercial"`, `"long-form"`
+  - `embedUrl` – embed link (YouTube `https://www.youtube.com/embed/<ID>`, Vimeo `https://player.vimeo.com/video/<ID>`, or a Frame.io embed link)
+  - `aspectRatio` – `"16:9"` or `"9:16"` (short-form work should always be `"9:16"`)
+  - `description` – short description (1-2 sentences)
+  - `tags` – array of strings (e.g. `["Color Grading", "Sound Design"]`)
 
-Trenutni podaci u fajlu su placeholder (demo) video zapisi — zameni `embedUrl`, naslove i opise svojim pravim radovima.
+The current data is placeholder (demo) footage — swap `embedUrl`, titles and descriptions for your own work.
 
-## Deploy na Vercel
+## Browsing the reel
 
-1. Push-uj repo na GitHub.
-2. Na [vercel.com](https://vercel.com) izaberi "Import Project" i selektuj repo.
-3. Vercel automatski prepoznaje Vite projekat (build command: `npm run build`, output: `dist`) — nije potrebna dodatna konfiguracija.
+Work is displayed as a **carousel**: one project at a time, with its description alongside (or below, on smaller screens). Navigate with the arrow buttons, the dots, arrow keys, or by swiping/dragging the video. Switching a filter tab resets the carousel back to the first matching project.
+
+## Deploying to Vercel
+
+1. Push the repo to GitHub.
+2. On [vercel.com](https://vercel.com), choose "Import Project" and select the repo.
+3. Vercel auto-detects the Vite project (build command: `npm run build`, output: `dist`) — no extra configuration needed.

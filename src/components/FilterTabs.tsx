@@ -17,7 +17,7 @@ interface FilterTabsProps {
 export default function FilterTabs({ active, onChange }: FilterTabsProps) {
   return (
     <nav
-      aria-label="Filter projekata"
+      aria-label="Filter projects"
       className="scrollbar-none -mx-6 flex gap-2 overflow-x-auto px-6 pb-1 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0"
     >
       {filters.map((filter) => {
@@ -31,13 +31,13 @@ export default function FilterTabs({ active, onChange }: FilterTabsProps) {
             className={`relative shrink-0 rounded-full border px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               isActive
                 ? 'border-transparent text-zinc-950'
-                : 'border-border text-zinc-400 hover:text-zinc-100 hover:border-zinc-600'
+                : 'border-border text-zinc-400 hover:border-zinc-600 hover:text-zinc-100'
             }`}
           >
             {isActive && (
               <motion.span
                 layoutId="active-filter-pill"
-                className="absolute inset-0 rounded-full bg-accent"
+                className="absolute inset-0 rounded-full bg-gradient-accent"
                 transition={{ type: 'spring', stiffness: 500, damping: 35 }}
               />
             )}
