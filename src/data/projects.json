@@ -1,0 +1,74 @@
+[
+  {
+    "id": "p1",
+    "title": "Reel za Instagram – Brzi rezovi",
+    "category": "short-form",
+    "embedUrl": "https://www.youtube.com/embed/M7lc1UVf-VE",
+    "aspectRatio": "9:16",
+    "description": "Dinamičan vertikalni edit sa brzim rezovima i tekstualnim naglascima, optimizovan za zadržavanje pažnje u prvih 3 sekunde.",
+    "tags": ["Fast Cuts", "Captions", "Sound Design"]
+  },
+  {
+    "id": "p2",
+    "title": "TikTok Highlight – Fitness Coach",
+    "category": "short-form",
+    "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    "aspectRatio": "9:16",
+    "description": "Kratki highlight edit iz trenerovih treninga, sa dinamičnim prelazima i motivacionom muzikom.",
+    "tags": ["Pacing", "Color Grading", "Sound Design"]
+  },
+  {
+    "id": "p3",
+    "title": "Valorant Montage – Clutch Plays",
+    "category": "gaming",
+    "embedUrl": "https://www.youtube.com/embed/TLkA0RELQ1g",
+    "aspectRatio": "16:9",
+    "description": "Montaža najboljih klučnih poteza sa sinhronizovanim zvučnim efektima i tranzicijama u ritmu muzike.",
+    "tags": ["Fast Cuts", "VFX", "Sound Design"]
+  },
+  {
+    "id": "p4",
+    "title": "Let's Play Highlights – Boss Fight",
+    "category": "gaming",
+    "embedUrl": "https://www.youtube.com/embed/Y-rmzh0PI3c",
+    "aspectRatio": "16:9",
+    "description": "Highlight edit epske borbe sa bosom, uz dodatu grafiku za brojanje pokušaja i naglašavanje ključnih trenutaka.",
+    "tags": ["Motion Graphics", "Color Grading"]
+  },
+  {
+    "id": "p5",
+    "title": "Product Launch – Reklama za obuću",
+    "category": "commercial",
+    "embedUrl": "https://player.vimeo.com/video/76979871",
+    "aspectRatio": "16:9",
+    "description": "Komercijalni spot za lansiranje novog modela patika, sa naglaskom na dinamičan kolor grejding i brend identitet.",
+    "tags": ["Color Grading", "Brand Identity", "Sound Design"]
+  },
+  {
+    "id": "p6",
+    "title": "Restoran Promo Video",
+    "category": "commercial",
+    "embedUrl": "https://www.youtube.com/embed/M7lc1UVf-VE",
+    "aspectRatio": "16:9",
+    "description": "Promotivni video za lokalni restoran, sa fokusom na atmosferu i pripremu hrane kroz meke prelaze.",
+    "tags": ["Motion Graphics", "Color Grading"]
+  },
+  {
+    "id": "p7",
+    "title": "Dokumentarni Kratkometražni Film",
+    "category": "long-form",
+    "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    "aspectRatio": "16:9",
+    "description": "Dugometražni narativni edit koji prati priču kroz intervjue, arhivske snimke i originalnu muziku.",
+    "tags": ["Storytelling", "Sound Design", "Color Grading"]
+  },
+  {
+    "id": "p8",
+    "title": "Podcast Epizoda – Highlight Edit",
+    "category": "long-form",
+    "embedUrl": "https://www.youtube.com/embed/TLkA0RELQ1g",
+    "aspectRatio": "16:9",
+    "description": "Multicam edit pune epizode podkasta sa automatskim prebacivanjem kamera i čišćenjem zvuka.",
+    "tags": ["Multicam Editing", "Sound Design"]
+  }
+]
