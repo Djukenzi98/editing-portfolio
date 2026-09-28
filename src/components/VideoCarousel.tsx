@@ -217,7 +217,7 @@ function ClipThumb({ project, active, onClick }: ClipThumbProps) {
         </span>
       </span>
       {active && (
-        <span className="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_rgba(250,204,21,0.8)]" />
+        <span className="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_var(--color-accent)]" />
       )}
     </button>
   )

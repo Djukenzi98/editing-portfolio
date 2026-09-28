@@ -30,7 +30,7 @@ export default function FilterTabs({ active, onChange }: FilterTabsProps) {
             aria-pressed={isActive}
             className={`relative shrink-0 rounded-full border px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               isActive
-                ? 'border-transparent text-zinc-950'
+                ? 'border-transparent text-on-accent'
                 : 'border-border text-zinc-400 hover:border-zinc-600 hover:text-zinc-100'
             }`}
           >

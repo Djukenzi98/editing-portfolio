@@ -4,16 +4,18 @@
   --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
 
-  --color-accent: #facc15;
-  --color-accent-2: #eab308;
-  --color-accent-soft: #facc1526;
+  --color-accent: #4b4bff;
+  --color-accent-2: #8a3ffc;
+  --color-accent-soft: #4b4bff26;
+  --color-on-accent: #ffffff;
 
-  --color-bg: #08080a;
-  --color-surface: #131316;
-  --color-surface-2: #1c1c20;
-  --color-border: #26262b;
+  --color-bg: #0b0b10;
+  --color-surface: #15151c;
+  --color-surface-2: #1d1d26;
+  --color-border: #272733;
 
-  --animate-marquee: marquee 26s linear infinite;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-spin-slow: spin-slow 18s linear infinite;
 }
 
 @keyframes marquee {
@@ -21,7 +23,13 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -54,7 +62,7 @@ body::before {
 
 ::selection {
   background: var(--color-accent);
-  color: #0a0a0b;
+  color: var(--color-on-accent);
 }
 
 * {
@@ -66,7 +74,7 @@ body::before {
 }
 
 .text-gradient {
-  background: linear-gradient(100deg, #ffffff 20%, var(--color-accent) 65%, var(--color-accent-2) 100%);
+  background: linear-gradient(100deg, var(--color-accent) 30%, var(--color-accent-2) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -83,4 +91,20 @@ body::before {
 
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+/* diagonal-hatched decoration discs (hero) */
+.bg-hatch {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    currentColor 0 2px,
+    transparent 2px 7px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-spin-slow {
+    animation: none;
+  }
 }

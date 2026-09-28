@@ -1,13 +1,14 @@
 import { MailIcon, InstagramIcon, YoutubeIcon } from './icons'
+import { EMAIL } from '../site'
 
 export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-border bg-surface">
+    <footer id="contact" className="border-t border-border bg-surface">
       <div className="mx-auto max-w-6xl px-6 py-16 text-center">
         <h2 className="font-display text-2xl font-semibold text-zinc-50 sm:text-3xl">
-          Got a project in mind?
+          Got a project <span className="text-accent">in mind?</span>
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-zinc-400">
           I'm always open to new collaborations — from short-form content
@@ -16,8 +17,8 @@ export default function Footer() {
         </p>
 
         <a
-          href="mailto:hello@djordjestamenkovic.com"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-accent px-6 py-3 text-sm font-semibold text-zinc-950 shadow-lg shadow-accent/20 transition-transform hover:scale-105"
+          href={`mailto:${EMAIL}`}
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-accent px-6 py-3 text-sm font-semibold text-on-accent shadow-lg shadow-accent/25 transition-transform hover:scale-105"
         >
           Hire Me
         </a>
@@ -26,30 +27,30 @@ export default function Footer() {
           <p>© {year} Djordje Stamenkovic. All rights reserved.</p>
           <div className="flex gap-4">
             <a
-              href="mailto:hello@djordjestamenkovic.com"
+              href={`mailto:${EMAIL}`}
               aria-label="Email"
               title="Email"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-zinc-500 hover:text-zinc-200"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
             >
               <MailIcon className="h-4 w-4" />
             </a>
             <a
-              href="https://instagram.com/yourhandle"
+              href="https://instagram.com/djukenzi_"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
               title="Instagram"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-zinc-500 hover:text-zinc-200"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
             >
               <InstagramIcon className="h-4 w-4" />
             </a>
             <a
-              href="https://youtube.com/@yourhandle"
+              href="https://youtube.com/@djukenzi_"
               target="_blank"
               rel="noreferrer"
               aria-label="YouTube"
               title="YouTube"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-zinc-500 hover:text-zinc-200"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
             >
               <YoutubeIcon className="h-4 w-4" />
             </a>
