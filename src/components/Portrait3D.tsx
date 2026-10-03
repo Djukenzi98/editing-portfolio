@@ -68,8 +68,8 @@ export default function Portrait3D() {
         <motion.img
           src={portrait}
           alt="Djordje Stamenkovic"
-          width={646}
-          height={969}
+          width={643}
+          height={959}
           draggable={false}
           style={{ z: 60 }}
           className="absolute bottom-0 left-1/2 h-full w-auto max-w-none -translate-x-1/2 drop-shadow-[0_0_28px_var(--color-accent-soft)] select-none [mask-image:linear-gradient(to_bottom,black_82%,transparent_97%)]"
