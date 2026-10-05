@@ -17,13 +17,13 @@ Open `http://localhost:5173`.
 - **Work items** → `src/data/projects.json`. Each object has:
   - `id` – unique string
   - `title` – project title
-  - `category` – one of: `"short-form"`, `"gaming"`, `"commercial"`, `"long-form"`
+  - `category` – one of: `"movie-tv"`, `"nature"`, `"anime"`, `"gaming"`, `"logo-animation"`
   - `embedUrl` – embed link (YouTube `https://www.youtube.com/embed/<ID>`, Vimeo `https://player.vimeo.com/video/<ID>`, or a Frame.io embed link)
-  - `aspectRatio` – `"16:9"` or `"9:16"` (short-form work should always be `"9:16"`)
+  - `aspectRatio` – `"16:9"` or `"9:16"` (match the video: vertical clips are `"9:16"`)
   - `description` – short description (1-2 sentences)
   - `tags` – array of strings (e.g. `["Color Grading", "Sound Design"]`)
 
-The current data is placeholder (demo) footage — swap `embedUrl`, titles and descriptions for your own work.
+Videos are hosted on Vimeo; categories with no entries yet show an empty state.
 
 ## Browsing the reel
 

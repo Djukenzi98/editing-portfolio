@@ -31,10 +31,10 @@ Single-page React 19 + TypeScript app scaffolded with Vite, styled with Tailwind
 
 **Content is data-driven from a single JSON file.** `src/data/projects.json` is the only source of portfolio content (work items). `src/App.tsx` imports it, casts it to `Project[]` (`src/types.ts`), and filters it in memory — there is no fetch/API layer. When adding or editing portfolio work, edit this JSON file rather than touching component code.
 
-**Category/filter is the central piece of state.** `App.tsx` holds `activeFilter` (`FilterOption['value']`: `'all' | 'short-form' | 'gaming' | 'commercial' | 'long-form'`) and derives `filteredProjects` via `useMemo`. It passes `key={activeFilter}` to `VideoCarousel`, which is a deliberate remount trick: it forces the carousel's internal `index` state back to 0 whenever the filter changes, instead of syncing that via an effect.
+**Category/filter is the central piece of state.** `App.tsx` holds `activeFilter` (`FilterOption['value']`: `'all' | 'movie-tv' | 'nature' | 'anime' | 'gaming' | 'logo-animation'`) and derives `filteredProjects` via `useMemo`. It passes `key={activeFilter}` to `VideoCarousel`, which is a deliberate remount trick: it forces the carousel's internal `index` state back to 0 whenever the filter changes, instead of syncing that via an effect.
 
 **`VideoCarousel.tsx` is the most complex component** and has two coupled parts:
-1. A "featured" stage (selected clip's embedded iframe + its title/description/tags shown alongside it) — layout ratio differs by `aspectRatio`: vertical (`9:16`, short-form) clips get a fixed-width column (`lg:w-[320px]`), horizontal (`16:9`) clips get a flexed, wider column (`lg:flex-[3]`) with the description panel taking `lg:flex-[2]`. This split exists to prevent the description panel from getting squeezed unreadably narrow next to wide 16:9 players — don't reintroduce a height-driven/aspect-ratio-only width for the stage without re-checking that panel width stays usable.
+1. A "featured" stage (selected clip's embedded iframe + its title/description/tags shown alongside it) — layout ratio differs by `aspectRatio`: vertical (`9:16`) clips get a fixed-width column (`lg:w-[320px]`), horizontal (`16:9`) clips get a flexed, wider column (`lg:flex-[3]`) with the description panel taking `lg:flex-[2]`. This split exists to prevent the description panel from getting squeezed unreadably narrow next to wide 16:9 players — don't reintroduce a height-driven/aspect-ratio-only width for the stage without re-checking that panel width stays usable.
 2. A filmstrip carousel below it (all clips in the current filter, horizontally scrollable with CSS scroll-snap, native `scrollBy` for the arrow buttons — no drag library) that lets the user pick which clip becomes "featured". Clicking a `ClipThumb` calls `select(i)`, which also sets a `direction` value consumed by the Framer Motion `variants` on the featured stage so the crossfade slides the correct way.
 
 Thumbnails and the featured player both render the *real* embed `iframe` (YouTube/Vimeo/etc., from `Project.embedUrl`) at small size rather than a fetched thumbnail image — this works because unautoplayed embeds just show their native poster/play-button and stay lightweight until pressed. `ClipThumb` iframes are `pointer-events-none` and a transparent overlay button captures the click instead, so clicking a filmstrip thumbnail always *selects* it rather than playing it inline.
@@ -49,12 +49,12 @@ Thumbnails and the featured player both render the *real* embed `iframe` (YouTub
 interface Project {
   id: string
   title: string
-  category: 'short-form' | 'gaming' | 'commercial' | 'long-form'
+  category: 'movie-tv' | 'nature' | 'anime' | 'gaming' | 'logo-animation'
   embedUrl: string        // YouTube `.../embed/<id>`, Vimeo `player.vimeo.com/video/<id>`, or Frame.io embed link
-  aspectRatio: '16:9' | '9:16'   // short-form should be '9:16'; everything else '16:9'
+  aspectRatio: '16:9' | '9:16'   // match the source video — vertical clips are '9:16'
   description: string
   tags: string[]
 }
 ```
 
-`FilterTabs` derives its five buttons from a hardcoded `FilterOption[]` list (`'all'` plus the four `category` values) — adding a new category value to the data model means also adding it to that list and to the `categoryLabels` map in `VideoCarousel.tsx`.
+`FilterTabs` derives its six buttons from a hardcoded `FilterOption[]` list (`'all'` plus the five `category` values) — adding a new category value to the data model means also adding it to that list and to the `categoryLabels` map in `VideoCarousel.tsx`.

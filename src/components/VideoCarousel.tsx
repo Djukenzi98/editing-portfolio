@@ -4,10 +4,11 @@ import type { Project } from '../types'
 import { ChevronLeftIcon, ChevronRightIcon } from './icons'
 
 const categoryLabels: Record<Project['category'], string> = {
-  'short-form': 'Short Form',
+  'movie-tv': 'Movie & TV Series Summaries',
+  nature: 'Nature Edits',
+  anime: 'Anime',
   gaming: 'Gaming',
-  commercial: 'Commercial',
-  'long-form': 'Long Form',
+  'logo-animation': 'Logo Animation',
 }
 
 interface VideoCarouselProps {

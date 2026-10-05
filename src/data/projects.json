@@ -1,74 +1,11 @@
 [
   {
-    "id": "p1",
-    "title": "Instagram Reel – Fast Cuts",
-    "category": "short-form",
-    "embedUrl": "https://www.youtube.com/embed/M7lc1UVf-VE",
+    "id": "divine-justice",
+    "title": "Divine Justice",
+    "category": "movie-tv",
+    "embedUrl": "https://player.vimeo.com/video/1233172504",
     "aspectRatio": "9:16",
-    "description": "A punchy vertical edit built around fast cuts and bold on-screen text, designed to hook viewers in the first 3 seconds.",
-    "tags": ["Fast Cuts", "Captions", "Sound Design"]
-  },
-  {
-    "id": "p2",
-    "title": "TikTok Highlight – Fitness Coach",
-    "category": "short-form",
-    "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
-    "aspectRatio": "9:16",
-    "description": "A short highlight reel from a trainer's sessions, with snappy transitions and motivational music driving the pace.",
-    "tags": ["Pacing", "Color Grading", "Sound Design"]
-  },
-  {
-    "id": "p3",
-    "title": "Valorant Montage – Clutch Plays",
-    "category": "gaming",
-    "embedUrl": "https://www.youtube.com/embed/TLkA0RELQ1g",
-    "aspectRatio": "16:9",
-    "description": "A montage of the best clutch plays, synced sound effects and transitions cut to the rhythm of the soundtrack.",
-    "tags": ["Fast Cuts", "VFX", "Sound Design"]
-  },
-  {
-    "id": "p4",
-    "title": "Let's Play Highlights – Boss Fight",
-    "category": "gaming",
-    "embedUrl": "https://www.youtube.com/embed/Y-rmzh0PI3c",
-    "aspectRatio": "16:9",
-    "description": "A highlight edit of an epic boss fight, with added on-screen graphics tracking attempts and key moments.",
-    "tags": ["Motion Graphics", "Color Grading"]
-  },
-  {
-    "id": "p5",
-    "title": "Product Launch – Sneaker Commercial",
-    "category": "commercial",
-    "embedUrl": "https://player.vimeo.com/video/76979871",
-    "aspectRatio": "16:9",
-    "description": "A commercial spot for a new sneaker launch, built around bold color grading and strong brand identity.",
-    "tags": ["Color Grading", "Brand Identity", "Sound Design"]
-  },
-  {
-    "id": "p6",
-    "title": "Restaurant Promo Video",
-    "category": "commercial",
-    "embedUrl": "https://www.youtube.com/embed/M7lc1UVf-VE",
-    "aspectRatio": "16:9",
-    "description": "A promotional video for a local restaurant, focused on atmosphere and food prep through smooth transitions.",
-    "tags": ["Motion Graphics", "Color Grading"]
-  },
-  {
-    "id": "p7",
-    "title": "Short Documentary Film",
-    "category": "long-form",
-    "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
-    "aspectRatio": "16:9",
-    "description": "A long-form narrative edit weaving together interviews, archival footage and an original score.",
-    "tags": ["Storytelling", "Sound Design", "Color Grading"]
-  },
-  {
-    "id": "p8",
-    "title": "Podcast Episode – Highlight Edit",
-    "category": "long-form",
-    "embedUrl": "https://www.youtube.com/embed/TLkA0RELQ1g",
-    "aspectRatio": "16:9",
-    "description": "A full multicam podcast episode edit with automatic camera switching and cleaned-up audio.",
-    "tags": ["Multicam Editing", "Sound Design"]
+    "description": "A 60-second vertical summary edit, cut to keep the story moving from the first second to the last.",
+    "tags": ["Summary", "Storytelling", "Pacing"]
   }
 ]

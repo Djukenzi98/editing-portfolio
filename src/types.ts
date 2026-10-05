@@ -1,4 +1,9 @@
-export type Category = 'short-form' | 'gaming' | 'commercial' | 'long-form'
+export type Category =
+  | 'movie-tv'
+  | 'nature'
+  | 'anime'
+  | 'gaming'
+  | 'logo-animation'
 
 export type AspectRatio = '16:9' | '9:16'
 

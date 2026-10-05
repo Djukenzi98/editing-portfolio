@@ -61,8 +61,8 @@ export default function Header() {
               className="mt-6 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg"
             >
               I've spent the last 5 years editing video and crafting motion
-              design — from short-form social content to gaming montages and
-              commercial spots. I obsess over rhythm, sound, and visual
+              design — from movie and TV series summaries to anime, gaming and
+              nature edits, plus logo animation. I obsess over rhythm, sound, and visual
               identity that keeps viewers watching from the first second.
             </motion.p>
 
