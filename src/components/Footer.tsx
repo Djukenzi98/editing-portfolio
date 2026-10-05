@@ -1,4 +1,4 @@
-import { MailIcon, InstagramIcon, YoutubeIcon } from './icons'
+import { MailIcon, InstagramIcon } from './icons'
 import { EMAIL } from '../site'
 
 export default function Footer() {
@@ -43,16 +43,6 @@ export default function Footer() {
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
             >
               <InstagramIcon className="h-4 w-4" />
-            </a>
-            <a
-              href="https://youtube.com/@djukenzi_"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-              title="YouTube"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
-            >
-              <YoutubeIcon className="h-4 w-4" />
             </a>
           </div>
         </div>

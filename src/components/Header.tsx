@@ -3,14 +3,12 @@ import Portrait3D from './Portrait3D'
 import {
   ArrowRightIcon,
   InstagramIcon,
-  YoutubeIcon,
   LinkedinIcon,
 } from './icons'
 import { EMAIL } from '../site'
 
 const socials = [
   { label: 'Instagram', href: 'https://instagram.com/djukenzi_', Icon: InstagramIcon },
-  { label: 'YouTube', href: 'https://youtube.com/@djukenzi_', Icon: YoutubeIcon },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/djukenzi_', Icon: LinkedinIcon },
 ]
 
