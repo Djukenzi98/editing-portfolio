@@ -7,5 +7,41 @@
     "aspectRatio": "9:16",
     "description": "A 60-second vertical summary edit, cut to keep the story moving from the first second to the last.",
     "tags": ["Summary", "Storytelling", "Pacing"]
+    },
+  {
+    "id": "you-liar",
+    "title": "You Liar",
+    "category": "movie-tv",
+    "embedUrl": "https://player.vimeo.com/video/1233171471",
+    "aspectRatio": "9:16",
+    "description": "A 60-second vertical summary edit, built to hook in the opening seconds and hold attention to the end.",
+    "tags": ["Summary", "Storytelling", "Pacing"]
+  },
+  {
+    "id": "the-alps-composite",
+    "title": "The Alps Composite",
+    "category": "nature",
+    "embedUrl": "https://player.vimeo.com/video/1233164303",
+    "aspectRatio": "16:9",
+    "description": "A composited nature piece set in the Alps, layering footage into a single cinematic landscape sequence.",
+    "tags": ["Compositing", "Color Grading", "Nature"]
+  },
+  {
+    "id": "nbc-logo-animated",
+    "title": "NBC Logo Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1233161804",
+    "aspectRatio": "16:9",
+    "description": "A short animated take on the NBC logo, bringing the mark to life in a five-second reveal.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
+    "id": "just-do-it-logo-animated",
+    "title": "Just Do It Logo Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1233161801",
+    "aspectRatio": "16:9",
+    "description": "An animated logo reveal built around the Just Do It slogan, timed for a quick, punchy finish.",
+    "tags": ["Logo Animation", "Motion Graphics"]
   }
 ]
