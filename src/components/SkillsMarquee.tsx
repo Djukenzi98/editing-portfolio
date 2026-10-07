@@ -28,7 +28,7 @@ export default function SkillsMarquee() {
             {[...skills, ...skills].map((skill, i) => (
               <li
                 key={`${skill}-${i}`}
-                className="flex shrink-0 items-center gap-8 font-display text-xs tracking-[0.18em] whitespace-nowrap text-zinc-400 uppercase"
+                className="flex shrink-0 items-center gap-8 font-type text-xs tracking-[0.18em] whitespace-nowrap text-zinc-400 uppercase"
               >
                 {skill}
                 <SparkleIcon className="h-2.5 w-2.5 text-accent" />

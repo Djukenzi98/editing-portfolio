@@ -53,8 +53,8 @@ export default function Portrait3D() {
         className="relative aspect-[4/5]"
       >
         {/* back layer: card the portrait stands in */}
-        <div className="absolute inset-x-0 top-[26%] bottom-0 overflow-hidden rounded-[2rem] border border-border bg-surface">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:40px_40px] opacity-40 [mask-image:radial-gradient(circle_at_50%_40%,black,transparent_75%)]" />
+        <div className="absolute inset-x-0 top-[26%] bottom-0 overflow-hidden rounded-md border border-border bg-surface">
+          <div className="bg-pinstripe absolute inset-0 opacity-50 [mask-image:radial-gradient(circle_at_50%_40%,black,transparent_80%)]" />
           <div className="absolute -bottom-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-accent/30 blur-[90px]" />
         </div>
 
@@ -72,7 +72,7 @@ export default function Portrait3D() {
           height={959}
           draggable={false}
           style={{ z: 60 }}
-          className="absolute bottom-0 left-1/2 h-full w-auto max-w-none -translate-x-1/2 drop-shadow-[0_0_28px_var(--color-accent-soft)] select-none [mask-image:linear-gradient(to_bottom,black_82%,transparent_97%)]"
+          className="absolute bottom-0 left-1/2 h-full w-auto max-w-none -translate-x-1/2 sepia-[.35] drop-shadow-[0_0_28px_var(--color-accent-soft)] select-none [mask-image:linear-gradient(to_bottom,black_82%,transparent_97%)]"
         />
 
         {/* front decorations: furthest forward, so they drift the most */}
@@ -104,7 +104,7 @@ export default function Portrait3D() {
                   d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"
                 />
               </defs>
-              <text className="fill-zinc-200 font-display text-[8.4px] font-medium tracking-[0.16em] uppercase">
+              <text className="fill-zinc-200 font-type text-[8.4px] tracking-[0.16em] uppercase">
                 <textPath href="#badge-circle" textLength="228" lengthAdjust="spacing">{BADGE_TEXT}</textPath>
               </text>
             </svg>

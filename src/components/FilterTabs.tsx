@@ -29,7 +29,7 @@ export default function FilterTabs({ active, onChange }: FilterTabsProps) {
             type="button"
             onClick={() => onChange(filter.value)}
             aria-pressed={isActive}
-            className={`relative shrink-0 rounded-full border px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            className={`relative shrink-0 rounded-sm border px-4 py-2 text-xs font-medium tracking-[0.14em] whitespace-nowrap uppercase transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               isActive
                 ? 'border-transparent text-on-accent'
                 : 'border-border text-zinc-400 hover:border-zinc-600 hover:text-zinc-100'
@@ -38,7 +38,7 @@ export default function FilterTabs({ active, onChange }: FilterTabsProps) {
             {isActive && (
               <motion.span
                 layoutId="active-filter-pill"
-                className="absolute inset-0 rounded-full bg-gradient-accent"
+                className="absolute inset-0 rounded-sm bg-gradient-accent"
                 transition={{ type: 'spring', stiffness: 500, damping: 35 }}
               />
             )}

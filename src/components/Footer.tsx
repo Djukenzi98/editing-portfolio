@@ -10,7 +10,10 @@ export default function Footer() {
         <h2 className="font-display text-2xl font-semibold text-zinc-50 sm:text-3xl">
           Got a project <span className="text-accent">in mind?</span>
         </h2>
-        <p className="mx-auto mt-3 max-w-xl text-zinc-400">
+        <div aria-hidden className="rule-ornament mt-4">
+          <span />
+        </div>
+        <p className="mx-auto mt-4 max-w-xl text-zinc-400">
           I'm always open to new collaborations — from short-form content
           to full-scale productions. Reach out and let's make something
           worth watching.
@@ -18,7 +21,7 @@ export default function Footer() {
 
         <a
           href={`mailto:${EMAIL}`}
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-accent px-6 py-3 text-sm font-semibold text-on-accent shadow-lg shadow-accent/25 transition-transform hover:scale-105"
+          className="mt-8 inline-flex items-center gap-2 rounded-sm bg-gradient-accent px-6 py-3 text-xs font-semibold tracking-[0.16em] text-on-accent uppercase shadow-lg shadow-accent/20 transition-transform hover:scale-105"
         >
           Hire Me
         </a>

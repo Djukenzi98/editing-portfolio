@@ -31,13 +31,16 @@ function App() {
         className="mx-auto w-full max-w-6xl flex-1 scroll-mt-16 px-6 py-20"
       >
         <div className="mb-10 text-center">
-          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-accent uppercase">
+          <p className="mb-3 font-type text-xs tracking-[0.2em] text-accent uppercase">
             Portfolio
           </p>
-          <h2 className="font-display text-3xl font-light text-zinc-50 sm:text-4xl">
+          <h2 className="font-display text-3xl text-zinc-50 sm:text-4xl">
             Selected <span className="font-semibold text-accent">Work</span>
           </h2>
-          <p className="mt-2 text-zinc-400">
+          <div aria-hidden className="rule-ornament mt-4">
+            <span />
+          </div>
+          <p className="mt-4 text-zinc-400">
             Browse through the reel — filter by category, then flip through
             the projects.
           </p>

@@ -43,6 +43,8 @@ Thumbnails and the featured player show a clean poster image instead of the prov
 
 **Theming is centralized in `src/index.css`** via a Tailwind v4 `@theme` block (`--color-accent`, `--color-accent-2`, `--color-bg`, `--color-surface`, etc., plus `--font-sans`/`--font-display`). Components reference these only through Tailwind utility classes (`bg-accent`, `text-accent`, `bg-gradient-accent`, `border-border`, …) or the custom `.text-gradient`/`.bg-gradient-accent`/`.scrollbar-none` classes defined in that same file — there are no hardcoded color hex values in component files. To re-theme the site, change the CSS variables in `src/index.css`; do not add per-component colors.
 
+The current look is a 1920s "Peaky Blinders" period theme: aged-brass accent on soot-black surfaces, Playfair Display headings (`font-display`), Lora body text (`font-sans`), and Special Elite typewriter lettering (`font-type`) for small labels, tags and counters. Components still use Tailwind's `text-zinc-*`/`border-zinc-*` utilities for neutrals, but the `@theme` block overrides the whole `--color-zinc-*` scale with warm parchment/tobacco tones — so re-tint neutrals there rather than swapping utility classes. Period details also live in `index.css`: the film grain (`body::before`), the smoky vignette (`body::after`), the `.rule-ornament` diamond divider under section headings, and the `.bg-pinstripe` cloth pattern on the portrait card. Buttons, tabs and cards use small radii (`rounded-sm`/`rounded-md`) and uppercase letter-spaced labels; only genuinely circular elements (icon buttons, badge, discs) are `rounded-full`.
+
 ## Content model (`src/types.ts` / `src/data/projects.json`)
 
 ```ts

@@ -70,7 +70,7 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
           }`}
         >
           <div
-            className="relative w-full overflow-hidden rounded-3xl border border-border bg-black shadow-2xl shadow-black/40"
+            className="relative w-full overflow-hidden rounded-md border border-border bg-black shadow-2xl shadow-black/40"
             style={{ aspectRatio: isVertical ? '9 / 16' : '16 / 9' }}
           >
             <AnimatePresence custom={direction} mode="wait" initial={false}>
@@ -90,7 +90,7 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
           </div>
         </div>
 
-        <div className="relative flex-1 overflow-hidden rounded-3xl border border-border bg-surface p-6 sm:p-8 lg:min-w-[280px] lg:flex-[2]">
+        <div className="relative flex-1 overflow-hidden rounded-md border border-border bg-surface p-6 sm:p-8 lg:min-w-[280px] lg:flex-[2]">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={current.id}
@@ -100,7 +100,7 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
               transition={{ duration: 0.28, ease: 'easeOut' }}
               className="flex h-full flex-col justify-center"
             >
-              <span className="w-fit rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold tracking-wide text-accent uppercase">
+              <span className="w-fit rounded-sm border border-accent/40 px-3 pt-1.5 pb-1 font-type text-xs tracking-[0.14em] text-accent uppercase">
                 {categoryLabels[current.category]}
               </span>
 
@@ -116,7 +116,7 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
                 {current.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-md border border-border bg-surface-2 px-2.5 py-1 text-xs font-medium text-zinc-300"
+                    className="rounded-sm border border-border bg-surface-2 px-2.5 pt-1.5 pb-1 font-type text-xs text-zinc-300"
                   >
                     {tag}
                   </span>
@@ -131,7 +131,7 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
       {total > 1 && (
         <div className="mt-8">
           <div className="mb-3 flex items-center justify-between">
-            <span className="font-display text-sm tabular-nums text-zinc-500">
+            <span className="font-type text-sm tracking-[0.1em] text-zinc-500 uppercase">
               Clip {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
             </span>
             <div className="hidden items-center gap-2 sm:flex">
@@ -204,7 +204,7 @@ function FeaturedPlayer({ project }: { project: Project }) {
         <img src={poster} alt="" className="h-full w-full object-cover" />
       )}
       <span className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/30">
-        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-accent text-bg shadow-lg shadow-black/50 transition-transform group-hover:scale-110">
+        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-accent text-on-accent shadow-lg shadow-black/50 transition-transform group-hover:scale-110">
           <PlayIcon className="h-7 w-7" />
         </span>
       </span>
@@ -228,7 +228,7 @@ function ClipThumb({ project, active, onClick }: ClipThumbProps) {
       onClick={onClick}
       aria-pressed={active}
       aria-label={`Show ${project.title}`}
-      className={`group relative h-24 shrink-0 snap-start overflow-hidden rounded-xl border bg-black transition-all sm:h-28 ${
+      className={`group relative h-24 shrink-0 snap-start overflow-hidden rounded-sm border bg-black transition-all sm:h-28 ${
         active
           ? 'border-accent ring-2 ring-accent/50'
           : 'border-border opacity-70 hover:opacity-100 hover:border-zinc-500'
