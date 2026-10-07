@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import type { Project } from '../types'
-import { ChevronLeftIcon, ChevronRightIcon } from './icons'
+import { usePoster } from '../hooks/usePoster'
+import { ChevronLeftIcon, ChevronRightIcon, PlayIcon } from './icons'
 
 const categoryLabels: Record<Project['category'], string> = {
   'movie-tv': 'Movie & TV Series Summaries',
@@ -83,14 +84,7 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
                 transition={{ duration: 0.32, ease: 'easeOut' }}
                 className="absolute inset-0"
               >
-                <iframe
-                  src={current.embedUrl}
-                  title={current.title}
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="h-full w-full border-0"
-                />
+                <FeaturedPlayer project={current} />
               </motion.div>
             </AnimatePresence>
           </div>
@@ -179,6 +173,45 @@ export default function VideoCarousel({ projects }: VideoCarouselProps) {
   )
 }
 
+const withAutoplay = (embedUrl: string) =>
+  `${embedUrl}${embedUrl.includes('?') ? '&' : '?'}autoplay=1`
+
+// Shows a clean poster with our own play button; the real embed only loads once pressed.
+function FeaturedPlayer({ project }: { project: Project }) {
+  const [playing, setPlaying] = useState(false)
+  const poster = usePoster(project.embedUrl)
+
+  if (playing || poster === null) {
+    return (
+      <iframe
+        src={playing ? withAutoplay(project.embedUrl) : project.embedUrl}
+        title={project.title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="h-full w-full border-0"
+      />
+    )
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => setPlaying(true)}
+      aria-label={`Play ${project.title}`}
+      className="group absolute inset-0 h-full w-full cursor-pointer"
+    >
+      {poster && (
+        <img src={poster} alt="" className="h-full w-full object-cover" />
+      )}
+      <span className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/30">
+        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-accent text-bg shadow-lg shadow-black/50 transition-transform group-hover:scale-110">
+          <PlayIcon className="h-7 w-7" />
+        </span>
+      </span>
+    </button>
+  )
+}
+
 interface ClipThumbProps {
   project: Project
   active: boolean
@@ -187,6 +220,7 @@ interface ClipThumbProps {
 
 function ClipThumb({ project, active, onClick }: ClipThumbProps) {
   const isVertical = project.aspectRatio === '9:16'
+  const poster = usePoster(project.embedUrl)
 
   return (
     <button
@@ -201,13 +235,24 @@ function ClipThumb({ project, active, onClick }: ClipThumbProps) {
       }`}
       style={{ aspectRatio: isVertical ? '9 / 16' : '16 / 9' }}
     >
-      <iframe
-        src={project.embedUrl}
-        title={project.title}
-        loading="lazy"
-        tabIndex={-1}
-        className="pointer-events-none h-full w-full border-0"
-      />
+      {poster === null ? (
+        <iframe
+          src={project.embedUrl}
+          title={project.title}
+          loading="lazy"
+          tabIndex={-1}
+          className="pointer-events-none h-full w-full border-0"
+        />
+      ) : (
+        poster && (
+          <img
+            src={poster}
+            alt=""
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        )
+      )}
       <span
         className={`pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-black/90 via-black/10 to-transparent p-2 text-left transition-opacity ${
           active ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
