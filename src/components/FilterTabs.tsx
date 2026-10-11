@@ -3,11 +3,11 @@ import type { FilterOption } from '../types'
 
 const filters: FilterOption[] = [
   { label: 'All', value: 'all' },
-  { label: 'Movie & TV Series Summaries', value: 'movie-tv' },
+  { label: 'Logo Animation', value: 'logo-animation' },
   { label: 'Nature Edits', value: 'nature' },
   { label: 'Anime', value: 'anime' },
   { label: 'Gaming', value: 'gaming' },
-  { label: 'Logo Animation', value: 'logo-animation' },
+  { label: 'Movie & TV Series Summaries', value: 'movie-tv' },
 ]
 
 interface FilterTabsProps {
