@@ -1,5 +1,50 @@
 [
   {
+    "id": "lexicon-logo-animated",
+    "title": "Lexicon Logo Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1234826400",
+    "aspectRatio": "16:9",
+    "description": "A seven-second animation of the Lexicon logo, resolving the mark into a crisp final lockup.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
+    "id": "sindjelic-bjj-judo-logo-animated",
+    "title": "Sindjelic BJJ & Judo Logo Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1234826581",
+    "aspectRatio": "16:9",
+    "description": "An eight-second animation of the Sindjelic BJJ & Judo club logo, landing the mark with a strong, decisive finish.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
+    "id": "brewmill-logo-animated",
+    "title": "BrewMill Logo Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1234826140",
+    "aspectRatio": "16:9",
+    "description": "A nine-second animated reveal of the BrewMill logo, easing the mark into place with an unhurried, crafted feel.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
+    "id": "kbv-mikro-kontrol-animated",
+    "title": "KBV Mikro Kontrol Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1233883751",
+    "aspectRatio": "16:9",
+    "description": "A six-second animated reveal of the KBV Mikro Kontrol logo, giving the mark a clean, confident entrance.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
+    "id": "reelhouse-logo-animated",
+    "title": "ReelHouse Logo Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1234826731",
+    "aspectRatio": "16:9",
+    "description": "An eight-second animated take on the ReelHouse logo, bringing the mark on screen with a smooth, cinematic reveal.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
     "id": "divine-justice",
     "title": "Divine Justice",
     "category": "movie-tv",
@@ -7,7 +52,7 @@
     "aspectRatio": "9:16",
     "description": "A 60-second vertical summary edit, cut to keep the story moving from the first second to the last.",
     "tags": ["Summary", "Storytelling", "Pacing"]
-    },
+  },
   {
     "id": "you-liar",
     "title": "You Liar",
@@ -45,57 +90,12 @@
     "tags": ["Logo Animation", "Motion Graphics"]
   },
   {
-    "id": "kbv-mikro-kontrol-animated",
-    "title": "KBV Mikro Kontrol Animated",
-    "category": "logo-animation",
-    "embedUrl": "https://player.vimeo.com/video/1233883751",
-    "aspectRatio": "16:9",
-    "description": "A six-second animated reveal of the KBV Mikro Kontrol logo, giving the mark a clean, confident entrance.",
-    "tags": ["Logo Animation", "Motion Graphics"]
-  },
-  {
     "id": "belafarm-logo-animated",
     "title": "Belafarm Logo Animated",
     "category": "logo-animation",
     "embedUrl": "https://player.vimeo.com/video/1233879951",
     "aspectRatio": "16:9",
     "description": "An eight-second animation of the Belafarm logo, building the mark piece by piece into its final lockup.",
-    "tags": ["Logo Animation", "Motion Graphics"]
-  },
-  {
-    "id": "brewmill-logo-animated",
-    "title": "BrewMill Logo Animated",
-    "category": "logo-animation",
-    "embedUrl": "https://player.vimeo.com/video/1234826140",
-    "aspectRatio": "16:9",
-    "description": "A nine-second animated reveal of the BrewMill logo, easing the mark into place with an unhurried, crafted feel.",
-    "tags": ["Logo Animation", "Motion Graphics"]
-  },
-  {
-    "id": "lexicon-logo-animated",
-    "title": "Lexicon Logo Animated",
-    "category": "logo-animation",
-    "embedUrl": "https://player.vimeo.com/video/1234826400",
-    "aspectRatio": "16:9",
-    "description": "A seven-second animation of the Lexicon logo, resolving the mark into a crisp final lockup.",
-    "tags": ["Logo Animation", "Motion Graphics"]
-  },
-  {
-    "id": "reelhouse-logo-animated",
-    "title": "ReelHouse Logo Animated",
-    "category": "logo-animation",
-    "embedUrl": "https://player.vimeo.com/video/1234826731",
-    "aspectRatio": "16:9",
-    "description": "An eight-second animated take on the ReelHouse logo, bringing the mark on screen with a smooth, cinematic reveal.",
-    "tags": ["Logo Animation", "Motion Graphics"]
-  },
-  {
-    "id": "sindjelic-bjj-judo-logo-animated",
-    "title": "Sindjelic BJJ & Judo Logo Animated",
-    "category": "logo-animation",
-    "embedUrl": "https://player.vimeo.com/video/1234826581",
-    "aspectRatio": "16:9",
-    "description": "An eight-second animation of the Sindjelic BJJ & Judo club logo, landing the mark with a strong, decisive finish.",
     "tags": ["Logo Animation", "Motion Graphics"]
   }
 ]
