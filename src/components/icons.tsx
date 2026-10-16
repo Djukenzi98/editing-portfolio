@@ -77,3 +77,30 @@ export function SparkleIcon({ className }: IconProps) {
     </svg>
   )
 }
+
+// Old-fashioned film projector: two reels on top (slowly turning), the
+// body, a lens on the right and a pair of legs.
+function ProjectorReel({ cx, cy }: { cx: number; cy: number }) {
+  return (
+    <g className="origin-center [transform-box:fill-box] motion-safe:animate-[spin_6s_linear_infinite]">
+      <circle cx={cx} cy={cy} r="5.25" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx={cx} cy={cy} r="0.9" fill="currentColor" />
+      <circle cx={cx} cy={cy - 2.6} r="1.1" fill="currentColor" />
+      <circle cx={cx + 2.25} cy={cy + 1.3} r="1.1" fill="currentColor" />
+      <circle cx={cx - 2.25} cy={cy + 1.3} r="1.1" fill="currentColor" />
+    </g>
+  )
+}
+
+export function ProjectorIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true">
+      <ProjectorReel cx={8} cy={8} />
+      <ProjectorReel cx={20} cy={8} />
+      <rect x="3.5" y="15.5" width="19" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M22.5 17.5 28.5 15v10l-6-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M8 24.5 6 29.5M18 24.5l2 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="8.5" cy="20" r="1.25" fill="currentColor" />
+    </svg>
+  )
+}

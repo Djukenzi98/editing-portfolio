@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import FilmStripCut from './FilmStripCut'
 import Portrait3D from './Portrait3D'
 import {
   ArrowRightIcon,
@@ -50,10 +49,7 @@ export default function Header() {
               <br />
               <span className="italic">video editor</span>
               <br />
-              <span className="inline-flex flex-col gap-3">
-                <span className="font-semibold text-accent">Djordje Stamenkovic</span>
-                <FilmStripCut />
-              </span>
+              <span className="font-semibold text-accent">Djordje Stamenkovic</span>
             </motion.h1>
 
             <motion.p

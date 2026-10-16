@@ -1,4 +1,5 @@
 import { EMAIL } from '../site'
+import { ProjectorIcon } from './icons'
 
 const navLinks = [
   { label: 'Home', href: '#top' },
@@ -15,9 +16,7 @@ export default function Navbar() {
           aria-label="Djordje Stamenkovic, back to top"
           className="flex items-center gap-2 font-display text-base font-semibold whitespace-nowrap text-zinc-50 sm:text-lg sm:tracking-wide"
         >
-          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-accent text-xs font-bold text-on-accent">
-            D
-          </span>
+          <ProjectorIcon className="h-8 w-8 shrink-0 text-accent" />
           Djordje Stamenkovic
         </a>
 
