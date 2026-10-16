@@ -13,10 +13,10 @@ import sssniperwolf from '../assets/channels/sssniperwolf.webp'
 import theprincefamily from '../assets/channels/theprincefamily.webp'
 
 const channels = [
-  { name: 'Caylus', href: 'https://www.youtube.com/@Caylus', avatar: caylus },
+  { name: 'Caylus', href: 'https://www.youtube.com/channel/UCVAYy7_zddIx6USjXscV9Vg', avatar: caylus },
   { name: 'Infinite', href: 'https://www.youtube.com/@infinite', avatar: infinite },
   { name: 'CaylusBlox', href: 'https://www.youtube.com/@caylusblox', avatar: caylusblox },
-  { name: 'CaylusCraft', href: 'https://www.youtube.com/@CaylusCraft', avatar: cayluscraft },
+  { name: 'CaylusCraft', href: 'https://www.youtube.com/channel/UC2vQdergcFuZIZ5ufQiPnbg', avatar: cayluscraft },
   { name: 'cay & keeks', href: 'https://www.youtube.com/@caykeeks', avatar: caykeeks },
   { name: 'SSSniperWolf', href: 'https://www.youtube.com/@SSSniperWolf', avatar: sssniperwolf },
   { name: 'KreekCraft', href: 'https://www.youtube.com/@KreekCraft', avatar: kreekcraft },
