@@ -1,6 +1,6 @@
 const facts = [
   { value: '5+ years', label: 'Professional video editing' },
-  { value: "Bachelor's", label: 'University of Electronics and Engineering' },
+  { value: "Bachelor's", label: 'Faculty of Electronic Engineering, University of Niš' },
   { value: 'Worldwide', label: 'YouTube creators, real estate firms & news agencies' },
 ]
 
@@ -25,8 +25,8 @@ export default function About() {
             <p>
               Video editing is my passion, and for more than half a decade it
               has also been my profession. I hold a Bachelor's degree from the
-              University of Electronics and Engineering, and that technical
-              background shapes how I work: I know my tools inside out and
+              Faculty of Electronic Engineering, University of Niš, and that
+              technical background shapes how I work: I know my tools inside out and
               build workflows that keep projects moving.
             </p>
             <p>
