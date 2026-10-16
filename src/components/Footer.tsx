@@ -1,3 +1,4 @@
+import EmailCopy from './EmailCopy'
 import { MailIcon } from './icons'
 import { EMAIL } from '../site'
 
@@ -25,6 +26,9 @@ export default function Footer() {
         >
           Hire Me
         </a>
+
+        <p className="mt-6 text-sm text-zinc-500">or write to me directly at</p>
+        <EmailCopy className="mt-2" />
 
         <div className="mt-12 flex flex-col items-center gap-4 border-t border-border pt-8 text-sm text-zinc-500 sm:flex-row sm:justify-between">
           <p>© {year} Đorđe Stamenković. All rights reserved.</p>

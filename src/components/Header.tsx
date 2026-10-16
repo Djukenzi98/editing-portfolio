@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import EmailCopy from './EmailCopy'
 import Portrait3D from './Portrait3D'
 import { ArrowRightIcon } from './icons'
 import { EMAIL } from '../site'
@@ -66,6 +67,10 @@ export default function Header() {
                 View Work
                 <ArrowRightIcon className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
+            </motion.div>
+
+            <motion.div {...fadeUp(0.26)} className="mt-6">
+              <EmailCopy />
             </motion.div>
           </div>
 
