@@ -10,11 +10,15 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#top" className="flex items-center gap-2 font-display text-lg font-semibold tracking-wide text-zinc-50">
-          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-accent text-xs font-bold text-on-accent">
+        <a
+          href="#top"
+          aria-label="Djordje Stamenkovic, back to top"
+          className="flex items-center gap-2 font-display text-base font-semibold whitespace-nowrap text-zinc-50 sm:text-lg sm:tracking-wide"
+        >
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-accent text-xs font-bold text-on-accent">
             D
           </span>
-          djukenzi
+          Djordje Stamenkovic
         </a>
 
         <ul className="hidden items-center gap-8 text-xs tracking-[0.18em] text-zinc-400 uppercase sm:flex">
