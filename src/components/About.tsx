@@ -35,7 +35,9 @@ export default function About() {
               <span className="text-zinc-200">Infinite</span> and{' '}
               <span className="text-zinc-200">CaylusBlox</span>, as well as real
               estate firms and news agencies, delivering everything from
-              fast-paced short-form edits to long-form videos.
+              fast-paced short-form edits to long-form videos. Most of that
+              work is under NDA, so what you see on this site are my personal
+              projects and client pieces that aren't covered by one.
             </p>
             <p>
               Alongside client work, I'm developing ways to connect AI with
