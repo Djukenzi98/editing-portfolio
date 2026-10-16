@@ -13,18 +13,18 @@ import sssniperwolf from '../assets/channels/sssniperwolf.webp'
 import theprincefamily from '../assets/channels/theprincefamily.webp'
 
 const channels = [
-  { name: 'Caylus', href: 'https://www.youtube.com/channel/UCVAYy7_zddIx6USjXscV9Vg', avatar: caylus },
+  { name: 'SSSniperWolf', href: 'https://www.youtube.com/@SSSniperWolf', avatar: sssniperwolf },
   { name: 'Infinite', href: 'https://www.youtube.com/@infinite', avatar: infinite },
+  { name: 'Reaction Time', href: 'https://www.youtube.com/@reactiontime', avatar: reactiontime },
+  { name: 'DangMattSmith', href: 'https://www.youtube.com/@dangmattsmith', avatar: dangmattsmith },
+  { name: 'Caylus', href: 'https://www.youtube.com/channel/UCVAYy7_zddIx6USjXscV9Vg', avatar: caylus },
+  { name: 'KreekCraft', href: 'https://www.youtube.com/@KreekCraft', avatar: kreekcraft },
+  { name: 'The Prince Family', href: 'https://www.youtube.com/@TheOfficialPrinceFamily', avatar: theprincefamily },
+  { name: 'Kreative Kyle', href: 'https://www.youtube.com/@KreativeKyle', avatar: kreativekyle },
+  { name: 'Mitch Summers', href: 'https://www.youtube.com/@MitchSummers', avatar: mitchsummers },
   { name: 'CaylusBlox', href: 'https://www.youtube.com/@caylusblox', avatar: caylusblox },
   { name: 'CaylusCraft', href: 'https://www.youtube.com/channel/UC2vQdergcFuZIZ5ufQiPnbg', avatar: cayluscraft },
   { name: 'cay & keeks', href: 'https://www.youtube.com/@caykeeks', avatar: caykeeks },
-  { name: 'SSSniperWolf', href: 'https://www.youtube.com/@SSSniperWolf', avatar: sssniperwolf },
-  { name: 'KreekCraft', href: 'https://www.youtube.com/@KreekCraft', avatar: kreekcraft },
-  { name: 'DangMattSmith', href: 'https://www.youtube.com/@dangmattsmith', avatar: dangmattsmith },
-  { name: 'Kreative Kyle', href: 'https://www.youtube.com/@KreativeKyle', avatar: kreativekyle },
-  { name: 'The Prince Family', href: 'https://www.youtube.com/@TheOfficialPrinceFamily', avatar: theprincefamily },
-  { name: 'Reaction Time', href: 'https://www.youtube.com/@reactiontime', avatar: reactiontime },
-  { name: 'Mitch Summers', href: 'https://www.youtube.com/@MitchSummers', avatar: mitchsummers },
 ]
 
 const facts = [
