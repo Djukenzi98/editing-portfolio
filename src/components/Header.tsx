@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import FilmStripCut from './FilmStripCut'
 import Portrait3D from './Portrait3D'
 import {
   ArrowRightIcon,
@@ -49,17 +50,19 @@ export default function Header() {
               <br />
               <span className="italic">video editor</span>
               <br />
-              <span className="font-semibold text-accent">Djordje Stamenkovic</span>
+              <span className="inline-flex flex-col gap-3">
+                <span className="font-semibold text-accent">Djordje Stamenkovic</span>
+                <FilmStripCut />
+              </span>
             </motion.h1>
 
             <motion.p
               {...fadeUp(0.12)}
               className="mt-6 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg"
             >
-              I've spent the last 5 years editing video and crafting motion
-              design — from movie and TV series summaries to anime, gaming and
-              nature edits, plus logo animation. I obsess over rhythm, sound, and visual
-              identity that keeps viewers watching from the first second.
+              I've been working as a video editor for more than half a decade,
+              covering motion graphics, long-form and short-form content, wedding
+              videos, nature edits, YouTube reels and fast-paced action videos.
             </motion.p>
 
             <motion.div {...fadeUp(0.2)} className="mt-9 flex flex-wrap items-center gap-6">
