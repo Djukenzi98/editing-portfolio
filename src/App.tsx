@@ -49,9 +49,9 @@ function App() {
           <p className="mx-auto mt-6 flex max-w-2xl items-start gap-3 rounded-md border border-border bg-surface/60 px-4 py-3 text-left text-sm leading-relaxed text-zinc-400">
             <LockIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
             <span>
-              Most of my client work is protected by Non-Disclosure Agreements
-              (NDAs), so it can't be shown here. The projects below are a
-              selection I'm able to share publicly.
+              Most of my client work is under NDA (Non-Disclosure Agreement),
+              so what you see on this site are my personal projects and client
+              pieces that aren't covered by one.
             </span>
           </p>
         </div>
