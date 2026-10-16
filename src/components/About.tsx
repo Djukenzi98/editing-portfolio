@@ -1,3 +1,18 @@
+import { ArrowRightIcon } from './icons'
+import caylus from '../assets/channels/caylus.webp'
+import caylusblox from '../assets/channels/caylusblox.webp'
+import dangmattsmith from '../assets/channels/dangmattsmith.webp'
+import infinite from '../assets/channels/infinite.webp'
+import kreekcraft from '../assets/channels/kreekcraft.webp'
+
+const channels = [
+  { name: 'Caylus', href: 'https://www.youtube.com/@Caylus', avatar: caylus },
+  { name: 'Infinite', href: 'https://www.youtube.com/@infinite', avatar: infinite },
+  { name: 'CaylusBlox', href: 'https://www.youtube.com/@caylusblox', avatar: caylusblox },
+  { name: 'KreekCraft', href: 'https://www.youtube.com/@KreekCraft', avatar: kreekcraft },
+  { name: 'DangMattSmith', href: 'https://www.youtube.com/@dangmattsmith', avatar: dangmattsmith },
+]
+
 const facts = [
   { value: '5+ years', label: 'Professional video editing' },
   { value: 'Worldwide', label: 'YouTube creators, real estate firms & news agencies' },
@@ -30,13 +45,15 @@ export default function About() {
               build workflows that keep projects moving.
             </p>
             <p>
-              I've worked with international clients and companies, including{' '}
-              <span className="text-zinc-200">Caylus</span> and his channels{' '}
+              I've worked with international clients and companies, including
+              YouTube creators like{' '}
+              <span className="text-zinc-200">Caylus</span> (and his channels{' '}
               <span className="text-zinc-200">Infinite</span>,{' '}
-              <span className="text-zinc-200">CaylusBlox</span>,{' '}
-              <span className="text-zinc-200">Caylus</span>,{' '}
-              <span className="text-zinc-200">CaylusCraft</span>, as well as real
-              estate firms and news agencies, delivering everything from
+              <span className="text-zinc-200">CaylusBlox</span> and{' '}
+              <span className="text-zinc-200">CaylusCraft</span>),{' '}
+              <span className="text-zinc-200">KreekCraft</span> and{' '}
+              <span className="text-zinc-200">DangMattSmith</span>, as well as
+              real estate firms and news agencies, delivering everything from
               fast-paced short-form edits to long-form videos.
             </p>
             <p>
@@ -60,6 +77,40 @@ export default function About() {
                 <p className="mt-1 font-type text-xs tracking-[0.14em] text-zinc-400 uppercase">
                   {fact.label}
                 </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-16">
+          <p className="mb-6 text-center font-type text-xs tracking-[0.2em] text-zinc-400 uppercase">
+            Channels I've edited for
+          </p>
+          <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {channels.map((channel) => (
+              <li key={channel.name}>
+                <a
+                  href={channel.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex h-full flex-col items-center gap-3 rounded-md border border-border bg-surface/60 px-4 py-6 text-center transition-all hover:-translate-y-1 hover:border-accent/60 hover:bg-surface"
+                >
+                  <img
+                    src={channel.avatar}
+                    alt=""
+                    width={80}
+                    height={80}
+                    loading="lazy"
+                    className="h-20 w-20 rounded-full object-cover ring-2 ring-border transition-[box-shadow] group-hover:ring-accent"
+                  />
+                  <span className="font-display text-lg font-semibold text-zinc-50">
+                    {channel.name}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 font-type text-[0.7rem] tracking-[0.14em] text-zinc-400 uppercase transition-colors group-hover:text-accent">
+                    YouTube
+                    <ArrowRightIcon className="h-3.5 w-3.5 -rotate-45" />
+                  </span>
+                </a>
               </li>
             ))}
           </ul>
