@@ -4,9 +4,21 @@ const skills = [
   'Premiere Pro',
   'After Effects',
   'DaVinci Resolve',
+  'Photoshop',
   'Color Grading',
   'Motion Graphics',
   'Sound Design',
+  'Audio Mixing',
+  'Storytelling',
+  'Pacing & Rhythm',
+  'Multicam Editing',
+  'Compositing',
+  'Visual Effects',
+  'Rotoscoping',
+  'Keyframe Animation',
+  'Kinetic Typography',
+  'Logo Animation',
+  'Subtitles & Captions',
 ]
 
 /**
@@ -25,7 +37,7 @@ export default function SkillsMarquee() {
             aria-hidden={copy === 1 || undefined}
             className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-8 pr-8 will-change-transform"
           >
-            {[...skills, ...skills].map((skill, i) => (
+            {skills.map((skill, i) => (
               <li
                 key={`${skill}-${i}`}
                 className="flex shrink-0 items-center gap-8 font-type text-xs tracking-[0.18em] whitespace-nowrap text-zinc-400 uppercase"

@@ -30,7 +30,7 @@
   --color-zinc-900: #1a1612;
   --color-zinc-950: #0d0b09;
 
-  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee: marquee 60s linear infinite;
   --animate-spin-slow: spin-slow 18s linear infinite;
 }
 
