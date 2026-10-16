@@ -1,16 +1,7 @@
 import { motion } from 'framer-motion'
 import Portrait3D from './Portrait3D'
-import {
-  ArrowRightIcon,
-  InstagramIcon,
-  LinkedinIcon,
-} from './icons'
+import { ArrowRightIcon } from './icons'
 import { EMAIL } from '../site'
-
-const socials = [
-  { label: 'Instagram', href: 'https://instagram.com/djukenzi_', Icon: InstagramIcon },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/djukenzi_', Icon: LinkedinIcon },
-]
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 18 },
@@ -75,22 +66,6 @@ export default function Header() {
                 View Work
                 <ArrowRightIcon className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
-            </motion.div>
-
-            <motion.div {...fadeUp(0.26)} className="mt-10 flex items-center gap-2">
-              {socials.map(({ label, href, Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={label}
-                  title={label}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-surface-2 text-zinc-400 transition-colors hover:bg-accent hover:text-on-accent"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
             </motion.div>
           </div>
 

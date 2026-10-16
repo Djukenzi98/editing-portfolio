@@ -9,35 +9,6 @@ export function MailIcon({ className }: IconProps) {
   )
 }
 
-export function InstagramIcon({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-      <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" strokeWidth="1.6" />
-      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" />
-      <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
-    </svg>
-  )
-}
-
-export function LinkedinIcon({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-      <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" stroke="currentColor" strokeWidth="1.6" />
-      <circle cx="8" cy="8.2" r="1.15" fill="currentColor" />
-      <path d="M8 11v6M8 11v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-      <path d="M8 11v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-      <path
-        d="M12.2 17v-3.6c0-1.2.8-2 1.9-2s1.7.8 1.7 2V17"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M12.2 11.4V17" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-    </svg>
-  )
-}
-
 export function ChevronLeftIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">

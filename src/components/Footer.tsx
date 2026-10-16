@@ -1,4 +1,4 @@
-import { MailIcon, InstagramIcon } from './icons'
+import { MailIcon } from './icons'
 import { EMAIL } from '../site'
 
 export default function Footer() {
@@ -36,18 +36,7 @@ export default function Footer() {
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
             >
               <MailIcon className="h-4 w-4" />
-            </a>
-            <a
-              href="https://instagram.com/djukenzi_"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-              title="Instagram"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border transition-colors hover:border-accent hover:text-accent"
-            >
-              <InstagramIcon className="h-4 w-4" />
-            </a>
-          </div>
+            </a>          </div>
         </div>
       </div>
     </footer>
