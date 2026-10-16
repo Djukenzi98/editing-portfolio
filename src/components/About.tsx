@@ -75,7 +75,7 @@ export default function About() {
             </p>
           </div>
 
-          <ul className="grid gap-4">
+          <ul className="grid gap-4 self-center">
             {facts.map((fact) => (
               <li
                 key={fact.value}
