@@ -2,6 +2,7 @@ import { ArrowRightIcon } from './icons'
 import caykeeks from '../assets/channels/caykeeks.webp'
 import caylus from '../assets/channels/caylus.webp'
 import caylusblox from '../assets/channels/caylusblox.webp'
+import cayluscraft from '../assets/channels/cayluscraft.webp'
 import dangmattsmith from '../assets/channels/dangmattsmith.webp'
 import infinite from '../assets/channels/infinite.webp'
 import kreativekyle from '../assets/channels/kreativekyle.webp'
@@ -15,6 +16,7 @@ const channels = [
   { name: 'Caylus', href: 'https://www.youtube.com/@Caylus', avatar: caylus },
   { name: 'Infinite', href: 'https://www.youtube.com/@infinite', avatar: infinite },
   { name: 'CaylusBlox', href: 'https://www.youtube.com/@caylusblox', avatar: caylusblox },
+  { name: 'CaylusCraft', href: 'https://www.youtube.com/@CaylusCraft', avatar: cayluscraft },
   { name: 'cay & keeks', href: 'https://www.youtube.com/@caykeeks', avatar: caykeeks },
   { name: 'SSSniperWolf', href: 'https://www.youtube.com/@SSSniperWolf', avatar: sssniperwolf },
   { name: 'KreekCraft', href: 'https://www.youtube.com/@KreekCraft', avatar: kreekcraft },
