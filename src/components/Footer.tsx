@@ -27,7 +27,7 @@ export default function Footer() {
         </a>
 
         <div className="mt-12 flex flex-col items-center gap-4 border-t border-border pt-8 text-sm text-zinc-500 sm:flex-row sm:justify-between">
-          <p>© {year} Djordje Stamenkovic. All rights reserved.</p>
+          <p>© {year} Đorđe Stamenković. All rights reserved.</p>
           <div className="flex gap-4">
             <a
               href={`mailto:${EMAIL}`}

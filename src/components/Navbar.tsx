@@ -13,11 +13,11 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a
           href="#top"
-          aria-label="Djordje Stamenkovic, back to top"
+          aria-label="Đorđe Stamenković, back to top"
           className="flex items-center gap-2 font-display text-base font-semibold whitespace-nowrap text-zinc-50 sm:text-lg sm:tracking-wide"
         >
           <ProjectorIcon className="h-8 w-8 shrink-0 text-accent" />
-          Djordje Stamenkovic
+          Đorđe Stamenković
         </a>
 
         <ul className="hidden items-center gap-8 text-xs tracking-[0.18em] text-zinc-400 uppercase sm:flex">

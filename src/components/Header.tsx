@@ -49,7 +49,7 @@ export default function Header() {
               <br />
               <span className="italic">video editor</span>
               <br />
-              <span className="font-semibold text-accent">Djordje Stamenkovic</span>
+              <span className="font-semibold text-accent">Đorđe Stamenković</span>
             </motion.h1>
 
             <motion.p
@@ -58,7 +58,7 @@ export default function Header() {
             >
               I've been working as a video editor for more than half a decade,
               covering motion graphics, long-form and short-form content, wedding
-              videos, nature edits, YouTube reels and fast-paced action videos.
+              videos, nature edits, YouTube reels, logo animations, fast-paced action videos, gaming content and more.
             </motion.p>
 
             <motion.div {...fadeUp(0.2)} className="mt-9 flex flex-wrap items-center gap-6">

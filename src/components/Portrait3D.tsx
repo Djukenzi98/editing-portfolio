@@ -67,7 +67,7 @@ export default function Portrait3D() {
         {/* the person — closest main layer */}
         <motion.img
           src={portrait}
-          alt="Djordje Stamenkovic"
+          alt="Đorđe Stamenković"
           width={643}
           height={959}
           draggable={false}
