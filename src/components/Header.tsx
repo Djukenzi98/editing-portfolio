@@ -11,7 +11,7 @@ const fadeUp = (delay: number) => ({
 
 export default function Header() {
   return (
-    <header id="top">
+    <header id="top" className="scroll-mt-16">
       <section className="relative overflow-hidden">
         {/* gaslight glow */}
         <div
@@ -19,7 +19,7 @@ export default function Header() {
           className="pointer-events-none absolute top-1/3 right-0 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-[140px]"
         />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 pt-16 pb-20 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 pt-4 pb-20 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <motion.p
               {...fadeUp(0)}
