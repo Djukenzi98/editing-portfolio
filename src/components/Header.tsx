@@ -19,7 +19,7 @@ export default function Header() {
           className="pointer-events-none absolute top-1/3 right-0 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-[140px]"
         />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 pt-4 pb-20 lg:grid-cols-[1.1fr_1fr]">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 py-6 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <motion.p
               {...fadeUp(0)}
