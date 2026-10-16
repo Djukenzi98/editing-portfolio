@@ -4,7 +4,9 @@ import Header from './components/Header'
 import SkillsMarquee from './components/SkillsMarquee'
 import FilterTabs from './components/FilterTabs'
 import VideoCarousel from './components/VideoCarousel'
+import About from './components/About'
 import Footer from './components/Footer'
+import { LockIcon } from './components/icons'
 import projectsData from './data/projects.json'
 import type { FilterOption, Project } from './types'
 
@@ -44,6 +46,14 @@ function App() {
             Browse through the reel — filter by category, then flip through
             the projects.
           </p>
+          <p className="mx-auto mt-6 flex max-w-2xl items-start gap-3 rounded-md border border-border bg-surface/60 px-4 py-3 text-left text-sm leading-relaxed text-zinc-400">
+            <LockIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+            <span>
+              Most of my client work is protected by Non-Disclosure Agreements
+              (NDAs), so it can't be shown here. The projects below are a
+              selection I'm able to share publicly.
+            </span>
+          </p>
         </div>
 
         <FilterTabs active={activeFilter} onChange={setActiveFilter} />
@@ -54,6 +64,7 @@ function App() {
         </div>
       </main>
 
+      <About />
       <Footer />
     </div>
   )
