@@ -50,7 +50,7 @@ export default function Header() {
             >
               I've been working as a video editor for more than half a decade,
               covering motion graphics, long-form and short-form content, wedding
-              videos, nature edits, YouTube reels, logo animations, fast-paced action videos, gaming content and more.
+              videos, nature edits, YouTube reels, logo animations, fast-paced action videos, podcasts, gaming content and more.
             </motion.p>
 
             <motion.div {...fadeUp(0.2)} className="mt-9 flex flex-wrap items-center gap-6">

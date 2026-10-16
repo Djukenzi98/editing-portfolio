@@ -64,7 +64,7 @@ export default function About() {
               Instagram accounts and other social platforms (you can see the
               YouTube channels I've edited for below), as well as for real
               estate firms and news agencies, delivering everything from
-              fast-paced short-form edits to long-form videos.
+              fast-paced short-form edits to long-form videos and podcasts.
             </p>
             <p>
               Alongside client work, I'm developing ways to connect AI with
