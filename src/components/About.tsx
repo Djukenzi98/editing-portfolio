@@ -59,16 +59,12 @@ export default function About() {
               build workflows that keep projects moving.
             </p>
             <p>
-              I've worked with international clients and companies, including
-              YouTube creators like{' '}
-              <span className="text-zinc-200">SSSniperWolf</span>,{' '}
-              <span className="text-zinc-200">Caylus</span> and his channels
-              (among them{' '}
-              <span className="text-zinc-200">CaylusCraft</span>),{' '}
-              <span className="text-zinc-200">KreekCraft</span> and{' '}
-              <span className="text-zinc-200">The Prince Family</span>, as well
-              as real estate firms and news agencies, delivering everything
-              from fast-paced short-form edits to long-form videos.
+              I've worked with international clients and companies, editing
+              for a range of influencers across their YouTube channels,
+              Instagram accounts and other social platforms (you can see the
+              YouTube channels I've edited for below), as well as for real
+              estate firms and news agencies, delivering everything from
+              fast-paced short-form edits to long-form videos.
             </p>
             <p>
               Alongside client work, I'm developing ways to connect AI with
