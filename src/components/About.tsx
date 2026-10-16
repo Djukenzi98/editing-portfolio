@@ -1,7 +1,7 @@
 const facts = [
   { value: '5+ years', label: 'Professional video editing' },
-  { value: "Bachelor's", label: 'Faculty of Electronic Engineering, University of Niš' },
   { value: 'Worldwide', label: 'YouTube creators, real estate firms & news agencies' },
+  { value: "Bachelor's", label: 'Faculty of Electronic Engineering, University of Niš' },
 ]
 
 export default function About() {
@@ -32,8 +32,10 @@ export default function About() {
             <p>
               I've worked with international clients and companies, including{' '}
               <span className="text-zinc-200">Caylus</span> and his channels{' '}
-              <span className="text-zinc-200">Infinite</span> and{' '}
-              <span className="text-zinc-200">CaylusBlox</span>, as well as real
+              <span className="text-zinc-200">Infinite</span>,{' '}
+              <span className="text-zinc-200">CaylusBlox</span>,{' '}
+              <span className="text-zinc-200">Caylus</span>,{' '}
+              <span className="text-zinc-200">CaylusCraft</span>, as well as real
               estate firms and news agencies, delivering everything from
               fast-paced short-form edits to long-form videos.
             </p>
