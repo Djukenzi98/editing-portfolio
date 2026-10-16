@@ -4,7 +4,7 @@
   /* 1920s Birmingham: old-style serifs, typewritten labels */
   --font-sans: 'Lora', Georgia, 'Times New Roman', serif;
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-type: 'Special Elite', 'Courier New', monospace;
+  --font-type: 'Josefin Sans', 'Century Gothic', 'Futura', sans-serif;
 
   /* aged brass on soot */
   --color-accent: #c9a45c;
