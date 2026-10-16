@@ -28,7 +28,7 @@ function App() {
 
       <main
         id="work"
-        className="mx-auto w-full max-w-6xl flex-1 scroll-mt-16 px-6 py-20"
+        className="mx-auto w-full max-w-6xl flex-1 scroll-mt-16 px-6 pt-10 pb-20"
       >
         <div className="mb-10 text-center">
           <p className="mb-3 font-type text-xs tracking-[0.2em] text-accent uppercase">
