@@ -30,6 +30,7 @@ const channels = [
 const facts = [
   { value: '5+ years', label: 'Professional video editing' },
   { value: 'Worldwide', label: 'YouTube creators, real estate firms & news agencies' },
+  { value: `${channels.length} channels`, label: 'Top YouTube creators edited for' },
   { value: "Bachelor's", label: 'Faculty of Electronic Engineering, University of Niš' },
 ]
 
