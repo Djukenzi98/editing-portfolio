@@ -6,6 +6,7 @@ import dangmattsmith from '../assets/channels/dangmattsmith.webp'
 import infinite from '../assets/channels/infinite.webp'
 import kreativekyle from '../assets/channels/kreativekyle.webp'
 import kreekcraft from '../assets/channels/kreekcraft.webp'
+import mitchsummers from '../assets/channels/mitchsummers.webp'
 import reactiontime from '../assets/channels/reactiontime.webp'
 import sssniperwolf from '../assets/channels/sssniperwolf.webp'
 import theprincefamily from '../assets/channels/theprincefamily.webp'
@@ -21,6 +22,7 @@ const channels = [
   { name: 'Kreative Kyle', href: 'https://www.youtube.com/@KreativeKyle', avatar: kreativekyle },
   { name: 'The Prince Family', href: 'https://www.youtube.com/@TheOfficialPrinceFamily', avatar: theprincefamily },
   { name: 'Reaction Time', href: 'https://www.youtube.com/@reactiontime', avatar: reactiontime },
+  { name: 'Mitch Summers', href: 'https://www.youtube.com/@MitchSummers', avatar: mitchsummers },
 ]
 
 const facts = [
@@ -96,9 +98,12 @@ export default function About() {
           <p className="mb-6 text-center font-type text-xs tracking-[0.2em] text-zinc-400 uppercase">
             Channels I've edited for
           </p>
-          <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          <ul className="flex flex-wrap justify-center gap-4">
             {channels.map((channel) => (
-              <li key={channel.name}>
+              <li
+                key={channel.name}
+                className="w-[calc(50%-0.5rem)] sm:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-5rem)/6)]"
+              >
                 <a
                   href={channel.href}
                   target="_blank"
@@ -113,7 +118,7 @@ export default function About() {
                     loading="lazy"
                     className="h-20 w-20 rounded-full object-cover ring-2 ring-border transition-[box-shadow] group-hover:ring-accent"
                   />
-                  <span className="font-display text-lg font-semibold text-zinc-50">
+                  <span className="font-display text-base font-semibold text-zinc-50 sm:text-lg lg:text-base">
                     {channel.name}
                   </span>
                   <span className="inline-flex items-center gap-1.5 font-type text-[0.7rem] tracking-[0.14em] text-zinc-400 uppercase transition-colors group-hover:text-accent">
