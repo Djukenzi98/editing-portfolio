@@ -1,16 +1,26 @@
 import { ArrowRightIcon } from './icons'
+import caykeeks from '../assets/channels/caykeeks.webp'
 import caylus from '../assets/channels/caylus.webp'
 import caylusblox from '../assets/channels/caylusblox.webp'
 import dangmattsmith from '../assets/channels/dangmattsmith.webp'
 import infinite from '../assets/channels/infinite.webp'
+import kreativekyle from '../assets/channels/kreativekyle.webp'
 import kreekcraft from '../assets/channels/kreekcraft.webp'
+import reactiontime from '../assets/channels/reactiontime.webp'
+import sssniperwolf from '../assets/channels/sssniperwolf.webp'
+import theprincefamily from '../assets/channels/theprincefamily.webp'
 
 const channels = [
   { name: 'Caylus', href: 'https://www.youtube.com/@Caylus', avatar: caylus },
   { name: 'Infinite', href: 'https://www.youtube.com/@infinite', avatar: infinite },
   { name: 'CaylusBlox', href: 'https://www.youtube.com/@caylusblox', avatar: caylusblox },
+  { name: 'cay & keeks', href: 'https://www.youtube.com/@caykeeks', avatar: caykeeks },
+  { name: 'SSSniperWolf', href: 'https://www.youtube.com/@SSSniperWolf', avatar: sssniperwolf },
   { name: 'KreekCraft', href: 'https://www.youtube.com/@KreekCraft', avatar: kreekcraft },
   { name: 'DangMattSmith', href: 'https://www.youtube.com/@dangmattsmith', avatar: dangmattsmith },
+  { name: 'Kreative Kyle', href: 'https://www.youtube.com/@KreativeKyle', avatar: kreativekyle },
+  { name: 'The Prince Family', href: 'https://www.youtube.com/@TheOfficialPrinceFamily', avatar: theprincefamily },
+  { name: 'Reaction Time', href: 'https://www.youtube.com/@reactiontime', avatar: reactiontime },
 ]
 
 const facts = [
@@ -47,14 +57,14 @@ export default function About() {
             <p>
               I've worked with international clients and companies, including
               YouTube creators like{' '}
-              <span className="text-zinc-200">Caylus</span> (and his channels{' '}
-              <span className="text-zinc-200">Infinite</span>,{' '}
-              <span className="text-zinc-200">CaylusBlox</span> and{' '}
+              <span className="text-zinc-200">SSSniperWolf</span>,{' '}
+              <span className="text-zinc-200">Caylus</span> and his channels
+              (among them{' '}
               <span className="text-zinc-200">CaylusCraft</span>),{' '}
               <span className="text-zinc-200">KreekCraft</span> and{' '}
-              <span className="text-zinc-200">DangMattSmith</span>, as well as
-              real estate firms and news agencies, delivering everything from
-              fast-paced short-form edits to long-form videos.
+              <span className="text-zinc-200">The Prince Family</span>, as well
+              as real estate firms and news agencies, delivering everything
+              from fast-paced short-form edits to long-form videos.
             </p>
             <p>
               Alongside client work, I'm developing ways to connect AI with
