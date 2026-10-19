@@ -17,10 +17,10 @@ export default function Header() {
         {/* gaslight glow */}
         <div
           aria-hidden
-          className="pointer-events-none absolute top-1/3 right-0 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-[140px]"
+          className="pointer-events-none absolute top-1/3 left-0 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-[140px]"
         />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 py-6 lg:grid-cols-[1.1fr_1fr]">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 py-6 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <motion.p
               {...fadeUp(0)}
@@ -78,6 +78,9 @@ export default function Header() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
+            // portrait on the left on desktop, so the off-camera gaze points
+            // toward the text; on phones it still stacks under the text
+            className="lg:order-first"
           >
             <Portrait3D />
           </motion.div>
