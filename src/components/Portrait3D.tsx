@@ -1,38 +1,23 @@
 import { SparkleIcon } from './icons'
-import portraitBg from '../assets/portrait-bg.webp'
-import portraitPerson from '../assets/portrait-person.webp'
+import portrait from '../assets/portrait.webp'
 
 const BADGE_TEXT = '5+ years in video editing • motion design • '
 
 /**
- * Two-layer portrait built from one photo: the room behind (desk, monitors,
- * lamp) is a blurred backdrop whose edges dissolve into the page, so there's
- * no box, and the person, cut out of the same photo, sits sharp on top for a
- * shallow depth-of-field look. Static decorations (sparkle, hatched disc,
- * badge) frame it.
+ * The photo exactly as delivered (no blur or tint), with only its outer edges
+ * fading into the page so there's no box. Static decorations frame it.
  */
 export default function Portrait3D() {
   return (
     <div className="relative mx-auto w-full max-w-[26rem]">
       <div className="relative aspect-[4/5]">
-        {/* static backdrop: blurred, darkened, edges fading into the page */}
         <img
-          src={portraitBg}
-          alt=""
-          width={800}
-          height={1000}
-          draggable={false}
-          className="absolute inset-0 h-full w-full object-cover sepia-[.2] select-none [mask-image:radial-gradient(closest-side,black_68%,transparent_100%)]"
-        />
-
-        {/* the person: same framing as the backdrop, so the two line up */}
-        <img
-          src={portraitPerson}
+          src={portrait}
           alt="Đorđe Stamenković"
           width={800}
           height={1000}
           draggable={false}
-          className="absolute inset-0 h-full w-full object-cover sepia-[.2] drop-shadow-[0_0_28px_var(--color-accent-soft)] select-none [mask-image:radial-gradient(ellipse_58%_68%_at_50%_34%,black_72%,transparent_100%)]"
+          className="absolute inset-0 h-full w-full object-cover select-none [mask-image:radial-gradient(closest-side,black_72%,transparent_100%)]"
         />
 
         {/* decorations */}

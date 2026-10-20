@@ -35,11 +35,11 @@ export default function Header() {
 
             <motion.h1
               {...fadeUp(0.05)}
-              className="font-display text-5xl leading-[1.05] tracking-tight text-zinc-50 sm:text-6xl"
+              className="font-display text-4xl leading-[1.08] tracking-tight text-zinc-50 sm:text-5xl"
             >
-              <span className="italic">This is your</span>
+              <span className="font-light">This is your</span>
               <br />
-              <span className="italic">video editor</span>
+              <span className="font-light">video editor</span>
               <br />
               <span className="font-semibold text-accent">Đorđe Stamenković</span>
             </motion.h1>
