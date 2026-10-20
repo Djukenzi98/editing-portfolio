@@ -1,12 +1,3 @@
-import { useRef } from 'react'
-import type { MouseEvent } from 'react'
-import {
-  motion,
-  useMotionValue,
-  useReducedMotion,
-  useSpring,
-  useTransform,
-} from 'framer-motion'
 import { SparkleIcon } from './icons'
 import portraitBg from '../assets/portrait-bg.webp'
 import portraitPerson from '../assets/portrait-person.webp'
@@ -14,42 +5,15 @@ import portraitPerson from '../assets/portrait-person.webp'
 const BADGE_TEXT = '5+ years in video editing • motion design • '
 
 /**
- * Two-layer portrait built from one photo. The room behind (desk, monitors,
- * lamp) is a static, blurred backdrop whose edges dissolve into the page, so
- * there's no box. The person is cut out of the same photo and sits in a
- * `preserve-3d` layer that tilts toward the cursor. Only the person moves:
- * the room and the decorations (sparkle, hatched disc, badge) stay put.
+ * Two-layer portrait built from one photo: the room behind (desk, monitors,
+ * lamp) is a blurred backdrop whose edges dissolve into the page, so there's
+ * no box, and the person, cut out of the same photo, sits sharp on top for a
+ * shallow depth-of-field look. Static decorations (sparkle, hatched disc,
+ * badge) frame it.
  */
 export default function Portrait3D() {
-  const ref = useRef<HTMLDivElement>(null)
-  const reduceMotion = useReducedMotion()
-
-  // cursor position within the scene, normalized to -0.5 … 0.5
-  const mx = useMotionValue(0)
-  const my = useMotionValue(0)
-  const spring = { stiffness: 120, damping: 18, mass: 0.6 }
-  const rotateY = useSpring(useTransform(mx, [-0.5, 0.5], [-12, 12]), spring)
-  const rotateX = useSpring(useTransform(my, [-0.5, 0.5], [9, -9]), spring)
-
-  const handleMove = (e: MouseEvent<HTMLDivElement>) => {
-    if (reduceMotion || !ref.current) return
-    const rect = ref.current.getBoundingClientRect()
-    mx.set((e.clientX - rect.left) / rect.width - 0.5)
-    my.set((e.clientY - rect.top) / rect.height - 0.5)
-  }
-
-  const handleLeave = () => {
-    mx.set(0)
-    my.set(0)
-  }
-
   return (
-    <div
-      ref={ref}
-      onMouseMove={handleMove}
-      onMouseLeave={handleLeave}
-      className="relative mx-auto w-full max-w-[26rem] [perspective:1200px]"
-    >
+    <div className="relative mx-auto w-full max-w-[26rem]">
       <div className="relative aspect-[4/5]">
         {/* static backdrop: blurred, darkened, edges fading into the page */}
         <img
@@ -61,23 +25,17 @@ export default function Portrait3D() {
           className="absolute inset-0 h-full w-full object-cover sepia-[.2] select-none [mask-image:radial-gradient(closest-side,black_68%,transparent_100%)]"
         />
 
-        <motion.div
-          style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
-          className="absolute inset-0"
-        >
-          {/* the person: same framing as the backdrop, so it lines up at rest */}
-          <motion.img
-            src={portraitPerson}
-            alt="Đorđe Stamenković"
-            width={800}
-            height={1000}
-            draggable={false}
-            style={{ z: 40 }}
-            className="absolute inset-0 h-full w-full object-cover sepia-[.2] drop-shadow-[0_0_28px_var(--color-accent-soft)] select-none [mask-image:radial-gradient(ellipse_58%_68%_at_50%_34%,black_72%,transparent_100%)]"
-          />
-        </motion.div>
+        {/* the person: same framing as the backdrop, so the two line up */}
+        <img
+          src={portraitPerson}
+          alt="Đorđe Stamenković"
+          width={800}
+          height={1000}
+          draggable={false}
+          className="absolute inset-0 h-full w-full object-cover sepia-[.2] drop-shadow-[0_0_28px_var(--color-accent-soft)] select-none [mask-image:radial-gradient(ellipse_58%_68%_at_50%_34%,black_72%,transparent_100%)]"
+        />
 
-        {/* decorations: static, outside the tilting layer */}
+        {/* decorations */}
         <div className="absolute top-[4%] right-[4%] text-accent">
           <SparkleIcon className="h-9 w-9 -rotate-12 drop-shadow-[0_0_14px_var(--color-accent)]" />
         </div>
