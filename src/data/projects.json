@@ -1,5 +1,14 @@
 [
   {
+    "id": "kbv-mikro-kontrol-animated",
+    "title": "KBV Mikro Kontrol Animated",
+    "category": "logo-animation",
+    "embedUrl": "https://player.vimeo.com/video/1233883751",
+    "aspectRatio": "16:9",
+    "description": "A six-second animated reveal of the KBV Mikro Kontrol logo, giving the mark a clean, confident entrance.",
+    "tags": ["Logo Animation", "Motion Graphics"]
+  },
+  {
     "id": "lexicon-logo-animated",
     "title": "Lexicon Logo Animated",
     "category": "logo-animation",
@@ -24,15 +33,6 @@
     "embedUrl": "https://player.vimeo.com/video/1234826140",
     "aspectRatio": "16:9",
     "description": "A nine-second logo reveal for BrewMill, an imaginary specialty coffee roaster, easing the mark into place with a warm, crafted feel.",
-    "tags": ["Logo Animation", "Motion Graphics"]
-  },
-  {
-    "id": "kbv-mikro-kontrol-animated",
-    "title": "KBV Mikro Kontrol Animated",
-    "category": "logo-animation",
-    "embedUrl": "https://player.vimeo.com/video/1233883751",
-    "aspectRatio": "16:9",
-    "description": "A six-second animated reveal of the KBV Mikro Kontrol logo, giving the mark a clean, confident entrance.",
     "tags": ["Logo Animation", "Motion Graphics"]
   },
   {
