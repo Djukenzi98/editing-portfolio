@@ -8,6 +8,7 @@ const filters: FilterOption[] = [
   { label: 'Anime', value: 'anime' },
   { label: 'Gaming', value: 'gaming' },
   { label: 'Movie & TV Series Summaries', value: 'movie-tv' },
+  { label: 'Assets & Social Media Plugs', value: 'assets-social' },
 ]
 
 interface FilterTabsProps {

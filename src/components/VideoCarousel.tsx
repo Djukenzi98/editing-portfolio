@@ -10,6 +10,7 @@ const categoryLabels: Record<Project['category'], string> = {
   anime: 'Anime',
   gaming: 'Gaming',
   'logo-animation': 'Logo Animation',
+  'assets-social': 'Assets & Social Media Plugs',
 }
 
 interface VideoCarouselProps {

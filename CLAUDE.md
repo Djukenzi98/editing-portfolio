@@ -31,7 +31,7 @@ Single-page React 19 + TypeScript app scaffolded with Vite, styled with Tailwind
 
 **Content is data-driven from a single JSON file.** `src/data/projects.json` is the only source of portfolio content (work items). `src/App.tsx` imports it, casts it to `Project[]` (`src/types.ts`), and filters it in memory — there is no fetch/API layer. When adding or editing portfolio work, edit this JSON file rather than touching component code.
 
-**Category/filter is the central piece of state.** `App.tsx` holds `activeFilter` (`FilterOption['value']`: `'all' | 'movie-tv' | 'nature' | 'anime' | 'gaming' | 'logo-animation'`) and derives `filteredProjects` via `useMemo`. It passes `key={activeFilter}` to `VideoCarousel`, which is a deliberate remount trick: it forces the carousel's internal `index` state back to 0 whenever the filter changes, instead of syncing that via an effect.
+**Category/filter is the central piece of state.** `App.tsx` holds `activeFilter` (`FilterOption['value']`: `'all' | 'movie-tv' | 'nature' | 'anime' | 'gaming' | 'logo-animation' | 'assets-social'`) and derives `filteredProjects` via `useMemo`. It passes `key={activeFilter}` to `VideoCarousel`, which is a deliberate remount trick: it forces the carousel's internal `index` state back to 0 whenever the filter changes, instead of syncing that via an effect.
 
 **`VideoCarousel.tsx` is the most complex component** and has two coupled parts:
 1. A "featured" stage (selected clip's embedded iframe + its title/description/tags shown alongside it) — layout ratio differs by `aspectRatio`: vertical (`9:16`) clips get a fixed-width column (`lg:w-[320px]`), horizontal (`16:9`) clips get a flexed, wider column (`lg:flex-[3]`) with the description panel taking `lg:flex-[2]`. This split exists to prevent the description panel from getting squeezed unreadably narrow next to wide 16:9 players — don't reintroduce a height-driven/aspect-ratio-only width for the stage without re-checking that panel width stays usable.
@@ -51,7 +51,7 @@ The current look is a dark "edit suite" theme taken from the portrait's own ligh
 interface Project {
   id: string
   title: string
-  category: 'movie-tv' | 'nature' | 'anime' | 'gaming' | 'logo-animation'
+  category: 'movie-tv' | 'nature' | 'anime' | 'gaming' | 'logo-animation' | 'assets-social'
   embedUrl: string        // YouTube `.../embed/<id>`, Vimeo `player.vimeo.com/video/<id>`, or Frame.io embed link
   aspectRatio: '16:9' | '9:16'   // match the source video — vertical clips are '9:16'
   description: string
@@ -59,4 +59,4 @@ interface Project {
 }
 ```
 
-`FilterTabs` derives its six buttons from a hardcoded `FilterOption[]` list (`'all'` plus the five `category` values) — adding a new category value to the data model means also adding it to that list and to the `categoryLabels` map in `VideoCarousel.tsx`.
+`FilterTabs` derives its seven buttons from a hardcoded `FilterOption[]` list (`'all'` plus the six `category` values) — adding a new category value to the data model means also adding it to that list and to the `categoryLabels` map in `VideoCarousel.tsx`.
